@@ -1,18 +1,17 @@
 #include <string>
 
-class Mascota
-{
+class mascota{
 private:
     int hambre;
     std::string nombre;
 
 public:
-    Mascota()
+    mascota(std::string nombre)
     {
         this->hambre = 0;
         this->nombre = nombre;
     }
-    ~Mascota() {}
+    ~mascota() {}
     void Jugar()
     {
         this->hambre += 5;
@@ -25,7 +24,7 @@ public:
     {
         return this->nombre;
     }
-    int DecirHombre()
+    int DecirHambre()
     {
         return this->hambre;
     }
